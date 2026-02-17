@@ -228,14 +228,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center text-primary-foreground/50 text-sm">
           <p className="flex items-center justify-center gap-1 flex-wrap">
-            © {new Date().getFullYear()} Bookworm Kids School. Made with{" "}
-            <motion.span
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1, repeat: Infinity }}
-            >
-              <Heart className="w-4 h-4 text-accent fill-accent" />
-            </motion.span>{" "}
-            for little learners.
+            © {new Date().getFullYear()} Bookworm Kids School
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import { motion, useInView, type Easing } from "framer-motion";
 import { useRef } from "react";
 import { Check, Heart, Shield, Lightbulb, Smile, Award, Star, Users, Target, Play, Sparkles } from "lucide-react";
-import classroomImage from "@/assets/classroom.jpg";
+import classroomImage from "../../../public/images/school.png";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 const features = [
@@ -130,16 +130,16 @@ const About = () => {
             <div className="relative z-10">
               {/* Main Image */}
               <motion.div
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
                 className="relative"
               >
                 <motion.div 
                   animate={{ 
-                    scale: [1, 1.02, 1],
+                    scale: [1, 1.05, 1],
                     opacity: [0.5, 0.8, 0.5],
                   }}
-                  transition={{ duration: 4, repeat: Infinity }}
+                  transition={{ duration: 8, repeat: Infinity }}
                   className="absolute -inset-4 bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/20 rounded-[2rem] blur-xl" 
                 />
                 <img

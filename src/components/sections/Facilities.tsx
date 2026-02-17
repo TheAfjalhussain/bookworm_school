@@ -69,12 +69,11 @@ const facilities = [
 ];
 
 const highlights = [
-  "10,000+ sq. ft. campus",
+  "1000+ sq. ft. campus",
   "Child-safe furniture",
   "Purified drinking water",
   "First aid room",
   "Indoor play area",
-  "Garden & nature zone",
 ];
 
 const Facilities = () => {
@@ -195,7 +194,7 @@ const Facilities = () => {
                 
                 {/* Overlay Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-display text-2xl font-bold text-white mb-2">Premium Campus</h3>
+                  <h3 className="font-display text-2xl font-bold text-white mb-2">Beautiful Class Room & Campus</h3>
                   <p className="text-white/80 text-sm">Designed for safety, learning, and endless play</p>
                 </div>
               </div>
@@ -210,13 +209,13 @@ const Facilities = () => {
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <motion.div whileHover={{ scale: 1.1 }}>
                     <div className="font-display text-2xl md:text-3xl font-bold text-primary">
-                      <AnimatedCounter end={10000} suffix="+" duration={2000} />
+                      <AnimatedCounter end={1000} suffix="+" duration={2000} />
                     </div>
                     <div className="text-xs text-muted-foreground font-medium">Sq. Ft. Campus</div>
                   </motion.div>
                   <motion.div whileHover={{ scale: 1.1 }} className="border-x border-border px-4">
                     <div className="font-display text-2xl md:text-3xl font-bold text-secondary">
-                      <AnimatedCounter end={12} duration={1500} />
+                      <AnimatedCounter end={10} duration={1500} />
                     </div>
                     <div className="text-xs text-muted-foreground font-medium">Classrooms</div>
                   </motion.div>

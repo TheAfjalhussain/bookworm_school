@@ -2,61 +2,52 @@ import { motion, useInView, type Easing } from "framer-motion";
 import { useRef } from "react";
 import { Linkedin, Mail, Award, GraduationCap, Heart, Star, Quote, Users } from "lucide-react";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import directorImg from "../../../public/images/director.png"
+import principleImg from "../../../public/images/principle-image.png"
+import headTeacherImg from "../../../public/images/head.png"
+import teacher1Img from "../../../public/images/teacher1.png"
+import teacher2Img from "../../../public/images/teacher2.png"
 
 const easeOut: Easing = [0.0, 0.0, 0.2, 1];
 
 const director = {
-  name: "Dr. Meena Krishnan",
+  name: "Amit Raj",
   role: "Founder & Director",
-  image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
-  bio: "With over 25 years in early childhood education and a Ph.D. in Child Psychology, Dr. Meena founded Bookworm Kids School with a vision to create a nurturing space where every child's potential is recognized and cultivated.",
-  qualifications: ["Ph.D. Child Psychology", "M.Ed. Early Childhood", "Montessori Certified"],
+  image: directorImg,
+  bio: "With over 5 years+ Experience in childhood education, Amit Raj founded Bookworm Kids School with a vision to create a nurturing space where every child's potential is recognized and cultivated.",
+  qualifications: ["B.Tech in Computer Science in Delhi"],
   quote: "Every child is a unique flower, and our job is to provide the right soil, sunlight, and love for them to bloom.",
 };
 
 const teachers = [
   {
-    name: "Priya Menon",
+    name: "Kajal Prajapati",
+    role: "Principle Of BookwormKids",
+    image: principleImg,
+    experience: "4 Years+",
+    specialization: "Child Psychology",
+  },
+  {
+    name: "Ahiliya Devi",
     role: "Head Teacher - Nursery",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face",
-    experience: "12 Years",
-    specialization: "Montessori Methods",
+    image: headTeacherImg,
+    experience: "20 Years+",
+    specialization: "Child Care-Based Learning",
   },
   {
-    name: "Anita Sharma",
-    role: "Senior Teacher - LKG/UKG",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=300&h=300&fit=crop&crop=face",
-    experience: "10 Years",
-    specialization: "Play-Based Learning",
-  },
-  {
-    name: "Sunita Patel",
+    name: "Nikhat Praveen",
     role: "Teacher - Playgroup",
-    image: "https://images.unsplash.com/photo-1548142813-c348350df52b?w=300&h=300&fit=crop&crop=face",
-    experience: "8 Years",
+    image: teacher1Img,
+    experience: "2 Years+",
     specialization: "Sensory Development",
   },
   {
-    name: "Kavitha Nair",
+    name: "Priti Kumari",
     role: "Art & Craft Teacher",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face",
-    experience: "6 Years",
+    image: teacher2Img,
+    experience: "3 Years+",
     specialization: "Creative Arts",
-  },
-  {
-    name: "Deepa Reddy",
-    role: "Music & Movement",
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&h=300&fit=crop&crop=face",
-    experience: "7 Years",
-    specialization: "Music Therapy",
-  },
-  {
-    name: "Lakshmi Iyer",
-    role: "Special Educator",
-    image: "https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?w=300&h=300&fit=crop&crop=face",
-    experience: "9 Years",
-    specialization: "Inclusive Education",
-  },
+  }
 ];
 
 const stats = [
@@ -153,7 +144,7 @@ const Team = () => {
                   <img
                     src={director.image}
                     alt={director.name}
-                    className="relative rounded-3xl w-full h-auto object-cover shadow-xl border-4 border-white/50"
+                    className="relative rounded-3xl w-full h-400 object-cover shadow-xl border-4 border-white/50"
                   />
                   
                   {/* Experience Badge */}
@@ -164,7 +155,7 @@ const Team = () => {
                     <div className="flex items-center gap-2">
                       <Award className="w-8 h-8 text-primary" />
                       <div>
-                        <div className="font-display font-bold text-foreground">25+ Years</div>
+                        <div className="font-display font-bold text-foreground">5+ Years</div>
                         <div className="text-xs text-muted-foreground">Experience</div>
                       </div>
                     </div>

@@ -7,7 +7,7 @@ const testimonials = [
     id: 1,
     name: "Priya Sharma",
     role: "Mother of Aarav (Nursery)",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7WoPzPf_BtvFmaxQVgEALG6Kvl2gUk-v7Q&s",
     content:
       "The transformation in my son has been incredible. He loves going to school every day and comes home excited to share what he learned. The teachers are so caring and attentive.",
     rating: 5,
