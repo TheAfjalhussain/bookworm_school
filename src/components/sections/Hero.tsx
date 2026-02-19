@@ -239,45 +239,6 @@ const Hero = ({ onEnquiryClick }: HeroProps) => {
         </div>
       </div>
 
-      {/* Slide Navigation - Bottom Center */}
-      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
-        <motion.button
-          onClick={prevSlide}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-12 h-12 bg-card/80 backdrop-blur-sm hover:bg-primary rounded-full flex items-center justify-center transition-all shadow-xl group"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="w-5 h-5 text-foreground group-hover:text-primary-foreground" />
-        </motion.button>
-        
-        <div className="flex items-center gap-2">
-          {slides.map((_, index) => (
-            <motion.button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              whileHover={{ scale: 1.2 }}
-              className={`transition-all duration-500 rounded-full ${
-                index === currentSlide
-                  ? "w-10 h-3 bg-primary"
-                  : "w-3 h-3 bg-primary-foreground/40 hover:bg-primary-foreground/60"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        <motion.button
-          onClick={nextSlide}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-12 h-12 bg-card/80 backdrop-blur-sm hover:bg-primary rounded-full flex items-center justify-center transition-all shadow-xl group"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="w-5 h-5 text-foreground group-hover:text-primary-foreground" />
-        </motion.button>
-      </div>
-
       {/* Mobile Stats Bar */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -285,7 +246,7 @@ const Hero = ({ onEnquiryClick }: HeroProps) => {
         transition={{ delay: 0.6 }}
         className="absolute bottom-4 left-4 right-4 z-20 lg:hidden"
       >
-        <div className="bg-card/95 backdrop-blur-lg rounded-2xl p-4 shadow-2xl border border-border/50">
+        <div className="bg-card/95 backdrop-blur-lg rounded-2xl p-2 shadow-2xl border border-border/50">
           <div className="grid grid-cols-3 divide-x divide-border">
             {stats.map((stat, index) => (
               <div key={index} className="text-center px-2">
